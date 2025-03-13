@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Haotian Huang, specializing in Quantitative Finance and Data Science.">
-    <title>Haotian Huang - Quantitative Finance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <title>Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- 导航栏 -->
+
+    <!-- Navigation Bar -->
     <header>
         <nav>
             <ul>
@@ -23,77 +24,59 @@
         </nav>
     </header>
 
-    <!-- 首页部分（随机过程折线图） -->
+    <!-- Main Welcome Section -->
     <section id="home">
-        <div class="intro">
-            <h1>Welcome to My Personal Website</h1>
-            <p>I'm Haotian Huang, a Quantitative Finance enthusiast with a passion for data analysis and financial modeling.</p>
-        </div>
-        <canvas id="line-chart"></canvas>
+        <h1>Welcome to My Personal Website</h1>
+        <p>I'm Haotian Huang, a Quantitative Finance enthusiast with a passion for data analysis and financial modeling.</p>
     </section>
 
-    <!-- 关于我 -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <div class="about-content">
-            <img src="images/profile.jpg" alt="Profile Photo">
-            <p>I am currently pursuing a double major in Geochemistry and Economics at Peking University (PKU), with a GPA of 3.75/4.0. I have strong knowledge in quantitative finance, machine learning, and data science. My interests lie in financial data analysis, trading strategies, and risk management.</p>
-        </div>
+        <img src="images/profile.jpeg" alt="Profile Photo" width="150" height="150">
+        <p>
+            I am currently pursuing a double major in Geochemistry and Economics at Peking University (PKU), with a GPA of 3.75/4.0. 
+            I have strong knowledge in quantitative finance, machine learning, and data science. 
+            My interests lie in financial data analysis, trading strategies, and risk management.
+        </p>
     </section>
 
-    <!-- 教育背景 -->
+    <!-- Education Section -->
     <section id="education">
         <h2>Education</h2>
-        <p><strong>Peking University (PKU)</strong> | Jun. 2022 - Jul. 2026</p>
-        <ul>
-            <li>Double Major in Geochemistry and Economics</li>
-            <li>Relevant Courses: Linear Algebra, Probability Statistics, Python in Data Science, Financial Engineering</li>
-            <li>Honors: ICBC STAR Scholarship (Top 10%)</li>
-        </ul>
+        <p>Information about your education goes here...</p>
     </section>
 
-    <!-- 工作经历 -->
+    <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
-        <h3>Quantitative Research Intern - Xuanyuan Private Fund Investment Management Co. Ltd | Jul. 2024 - Sept. 2024</h3>
-        <p>Analyzed stock index futures data using machine learning models to develop efficient trading strategies. Achieved an annual return of 21% with a maximum drawdown of 11%.</p>
-
-        <h3>Industry Research Intern - Huaxi Securities | Feb. 2024 - Jul. 2024</h3>
-        <p>Prepared reports, analyzed financial data, and developed valuation models for chemical companies.</p>
+        <p>Information about your work experience goes here...</p>
     </section>
 
-    <!-- 项目 -->
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <h3>Stock Investing Strategies Based on Technical Indicators and Machine Learning</h3>
-        <p>Developed strategies based on technical indicators and machine learning to predict yields and optimize models for backtesting.</p>
-
-        <h3>Mathematical Contest In Modeling</h3>
-        <p>Built multi-objective optimization models to analyze government expenditure and propose strategies for sustainable development.</p>
+        <p>Information about your projects goes here...</p>
     </section>
 
-    <!-- 技能 -->
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, C++</li>
-            <li>Tools: Excel, QuantLib, Backtrader</li>
-            <li>Languages: Fluent in English, Native Chinese Speaker</li>
-        </ul>
+        <p>Information about your skills goes here...</p>
     </section>
 
-    <!-- 联系我 -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:2200012613@stu.pku.edu.cn">2200012613@stu.pku.edu.cn</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/haotianhuang" target="_blank">Visit my LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Visit my GitHub</a></p>
+        <p>Contact details go here...</p>
     </section>
 
+    <!-- Footer with chart animation -->
     <footer>
-        <p>© 2023 Haotian Huang. All rights reserved.</p>
+        <canvas id="randomProcessesChart"></canvas>
     </footer>
 
+    <!-- JavaScript file -->
     <script src="scripts.js"></script>
 </body>
 </html>
