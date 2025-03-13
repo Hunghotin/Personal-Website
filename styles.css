@@ -1,13 +1,16 @@
 /* 基本样式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #1e3a8a;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -25,7 +28,7 @@ a:hover {
 
 /* 导航栏 */
 header {
-    background-color: #333;
+    background-color: #0066cc;
     color: white;
     padding: 10px 0;
 }
@@ -46,13 +49,19 @@ header nav ul li a {
 
 /* 首页部分 */
 #home {
-    background-color: #f4f4f4;
+    background-color: #fff;
     padding: 60px 0;
     text-align: center;
+    position: relative;
 }
 
 #home h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+}
+
+#home p {
+    font-size: 1.5em;
+    color: #555;
 }
 
 /* 关于我部分 */
@@ -73,13 +82,14 @@ header nav ul li a {
     align-items: center;
 }
 
-/* 教育背景、经历、项目、技能部分 */
+/* 其他部分 */
 section {
     padding: 40px;
+    background-color: #fff;
 }
 
 section h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
@@ -87,16 +97,20 @@ section p, section ul {
     font-size: 1.2em;
 }
 
-/* 联系我部分 */
-#contact {
-    background-color: #f4f4f4;
-    padding: 40px;
-}
-
 /* 页脚 */
 footer {
-    background-color: #333;
+    background-color: #0066cc;
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* Canvas图表（随机过程指数折线图） */
+#home canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
